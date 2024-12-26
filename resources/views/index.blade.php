@@ -1,5 +1,10 @@
 @extends('Master')
 
+
+@section('title')
+Home Page
+@endsection
+
 @section('cont')
 <main class="flex-shrink-0">
     <!-- Header-->
@@ -13,8 +18,8 @@
                         <div class="fs-3 fw-light text-muted">I can help your business to</div>
                         <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Get online and grow fast</span></h1>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
-                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
+                            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="{{ route('resume') }}">Resume</a>
+                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="{{ route('projects') }}">Projects</a>
                         </div>
                     </div>
                 </div>
@@ -165,6 +170,3 @@
 </main>
 @endsection
 
-@section('title')
-Home Page
-@endsection

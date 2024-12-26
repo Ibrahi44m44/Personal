@@ -19,7 +19,7 @@
         <style>
                 #mainNav .navbar-nav > li.nav-item > a.nav-link.current{
                 color:red;
-            }
+                }
         </style>
     </head>
     <body>
