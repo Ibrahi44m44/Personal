@@ -26,6 +26,33 @@ class MainController extends Controller
     }
 
 
+    function user($name , $age){
+        // return "Welcome $name Your age $age";
+
+        /* -------------------------------------------------------------------------- */
+        /*                      The First way to send vir to view                     */
+        /* -------------------------------------------------------------------------- */
+        // return view('user.profile')
+        // ->with('name',$name)
+        // ->with('age',$age);
+
+        /* -------------------------------------------------------------------------- */
+        /*                     The Second way to send vir to view                    */
+        /* -------------------------------------------------------------------------- */
+        // return view('user.profile' , [
+        //     'name' => $name,
+        //     'age' => $age
+        // ]);
+
+
+
+        /* -------------------------------------------------------------------------- */
+        /*                      The Third way to send vir to view                     */
+        /* -------------------------------------------------------------------------- */
+        return view('user.profile' , compact('name','age'));
+    }
+
+
 
 
 
